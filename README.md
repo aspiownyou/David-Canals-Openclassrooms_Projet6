@@ -1,6 +1,6 @@
 # Python: automatisation de configurations Cisco
 
-<a href="https://www.casimages.com/i/20011804153325065016607643.png.html" target="_blank" title="Mon image"><img src="https://nsm09.casimages.com/img/2020/01/18//20011804153325065016607643.png" border="0" alt="Mon image" /></a>
+![alt text](https://www.casimages.com/i/20011805252325065016607769.png.html)
 
 Le but ce ce projet est d'automatiser des configurations sur du matériel Cisco avec Python et le protocole Telnet: 
 * La créations automatique de Vlans et d'assignations de ports pour le Switch.
@@ -22,9 +22,21 @@ Pour ce faire on dispose de plusieurs scripts:
 
 ## Etablir une connexion Telnet entre les équipements Cisco et le poste de travail sous Linux.
 
-You are currently viewing your project's **README** file. **_README_** files are like cover pages or elevator pitches for your project. They are written in plain text or [Markdown language](https://guides.github.com/features/mastering-markdown/), and usually include a paragraph describing the project, directions on how to use it, who authored it, and more.
+Dans un premier temps on va devoir manuellement configurer le Switch et le Routeur pour permettre une connexion à distance via notre machine sous Linux. Dans notre exemple on utilisera le Switch mais les commandes sont à une exceptions près les mêmes à faire sur le Routeur.
 
-[Learn more about READMEs](https://help.github.com/en/articles/about-readmes)
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+interface vlan 1
+Switch(config-if)#ip address 192.168.10.253 255.255.255.0
+Switch(config-if)#no shut
+%LINK-5-CHANGED: Interface Vlan1, changed state to up
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+Switch(config-if)#exit
+Switch(config)#ip default-gateway 192.168.10.254
+Switch(config)#exit
+
 
 ## Your first website
 
