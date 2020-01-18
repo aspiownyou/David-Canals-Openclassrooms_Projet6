@@ -1,6 +1,6 @@
 # Python: automatisation de configurations Cisco
 
-![alt text](https://www.casimages.com/i/20011805252325065016607769.png.html)
+<a href="https://www.casimages.com/i/20011805252325065016607769.png.html" target="_blank" title="Mon image"><img src="https://nsm09.casimages.com/img/2020/01/18//20011805252325065016607769.png" border="0" alt="Mon image" /></a>
 
 Le but ce ce projet est d'automatiser des configurations sur du matériel Cisco avec Python et le protocole Telnet: 
 * La créations automatique de Vlans et d'assignations de ports pour le Switch.
