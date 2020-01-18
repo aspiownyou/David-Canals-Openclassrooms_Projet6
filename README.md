@@ -19,23 +19,13 @@ Pour ce faire on dispose de plusieurs scripts:
 * Un poste ou une machine virtuelle sous Linux disposant d'une version récente de Python version 3. Pour la rédaction des scripts Python on a utilisé le logiciel Visual Studio Code.
 * Configurer une connexion Telnet pour permettre l'administration du Switch et du Routeur à distance.
 * Une connaissance des commandes CLI Cisco.
+* Les modules nécessaires pour le fonctionnement de l'ensemble des scripts sont les modules OS, Telnelib, Getpass et Subprocess. 
 
-## Etablir une connexion Telnet entre les équipements Cisco et le poste de travail sous Linux.
 
-Dans un premier temps on va devoir manuellement configurer le Switch et le Routeur pour permettre une connexion à distance via notre machine sous Linux. Dans notre exemple on utilisera le Switch mais les commandes sont à une exceptions près les mêmes à faire sur le Routeur.
 
-Switch>en
-Switch#conf t
-Enter configuration commands, one per line.  End with CNTL/Z.
-Switch(config)#
-interface vlan 1
-Switch(config-if)#ip address 192.168.10.253 255.255.255.0
-Switch(config-if)#no shut
-%LINK-5-CHANGED: Interface Vlan1, changed state to up
-%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
-Switch(config-if)#exit
-Switch(config)#ip default-gateway 192.168.10.254
-Switch(config)#exit
+
+
+
 
 
 ## Your first website
