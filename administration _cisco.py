@@ -31,7 +31,7 @@ while choix != "3":
                 subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/port_switch.py"])
             else:
                 print("Retour au menu principal")
-            break
+            
             
     elif choix == "2": # Menu de la catégorie router
         router = """
@@ -47,7 +47,7 @@ while choix != "3":
                 subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/"])
             else:
                 print("Retour au menu principal")
-            break
+            
 
     else:
         print("fin de programme")
