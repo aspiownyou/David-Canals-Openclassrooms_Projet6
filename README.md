@@ -26,7 +26,7 @@ Pour ce faire on dispose de plusieurs scripts:
 ## Quelques remarques et précisions pour les scripts
 
 * Pour notre exemple on a pris comme nom d'utilisateur et mot de passe "cisco" (sans les guillemets)
-* Chaque commande cisco est précédé par la lettre b et se finit par \n . Le b permet de simuler une commande entrer manuellement, le \n simule la validation de la commande avec la touche entrée.
+* Chaque commande cisco est précédé par la lettre b et se finit par \n . Le b permet de simuler une commande entrer manuellement dans le CLI cisco, le \n simule la validation de la commande avec la touche entrée.
 * Ne pas oublier de faire un chmod 700 sur chaque scripts pour qu'ils puissent être executer sur le terminal.
 
 
