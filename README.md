@@ -7,8 +7,8 @@ Le but ce ce projet est d'automatiser des configurations sur du matériel Cisco 
 * La mise en place d'un rôle DHCP et du routage statique pour le Routeur. 
 
 Pour ce faire on dispose de plusieurs scripts: 
-* Le script principal administration_cisco.py demande dans un premier temps à l'utilisateur de choisir entre le Switch et le Routeur. Puis dans un deuxième temps une liste de tâches automatique lui sera proposé.
-* Le script vlan.py va automatiquement créer 2 vlans: un vlan 11 pour le directeur et un vlan 12 pour une employés des Ressources Humaines.
+* Le script principal administration_cisco.py demande dans un premier temps à l'utilisateur de choisir entre le Switch et le Routeur. Puis dans un deuxième temps une liste de tâches automatiques lui sera proposé.
+* Le script vlan.py va automatiquement créer 2 vlans: un vlan 11 pour le directeur et un vlan 12 pour une employée des Ressources Humaines.
 * Le script port_switch.py va affecter deux ports aux vlans créer précédemment et configurer deux autres ports en mode trunk.
 * Le script dhcp_routage_vlan.py va créer deux subinterfaces qui feront office de gateway pour chaque vlan ainsi que l'ajout d'un rôle DHCCP pour le Routeur.
 * Le script routage_statique.py va créer un routage statique simple entre notre LAN et Internet
@@ -16,7 +16,7 @@ Pour ce faire on dispose de plusieurs scripts:
 
 ## Prérequis
 
-* Un poste ou une machine virtuelle sous Linux disposant d'une version récente de Python version 3. Pour la rédaction des scripts Python on a utilisé le logiciel Visual Studio Code.
+* Un poste ou une machine virtuelle sous Linux disposant d'une version récente de Python version 3. Pour la rédaction des scripts Python j'ai utilisé le logiciel Visual Studio Code.
 * Configurer une connexion Telnet pour permettre l'administration du Switch et du Routeur à distance.
 * Une connaissance des commandes CLI Cisco.
 * Les modules nécessaires pour le fonctionnement de l'ensemble des scripts sont les modules OS, Telnelib, Getpass et Subprocess. 
@@ -25,7 +25,7 @@ Pour ce faire on dispose de plusieurs scripts:
 
 ## Quelques remarques et précisions pour les scripts
 
-* Pour notre exemple on a pris comme nom d'utilisateur et mot de passe "cisco" (sans les guillemets)
+* Pour mon exemple j'ai pris pour la connexion Telnet comme nom d'utilisateur et mot de passe "cisco" (sans les guillemets)
 * Chaque commande cisco est précédé par la lettre b et se finit par \n . Le b permet de simuler une commande entrer manuellement dans le CLI cisco, le \n simule la validation de la commande avec la touche entrée.
 * Ne pas oublier de faire un chmod 700 sur chaque scripts pour qu'ils puissent être executer sur le terminal.
 
