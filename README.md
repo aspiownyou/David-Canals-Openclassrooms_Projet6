@@ -28,6 +28,6 @@ Pour ce faire on dispose de plusieurs scripts:
 * Pour mon exemple j'ai pris pour la connexion Telnet comme nom d'utilisateur et mot de passe "cisco" (sans les guillemets)
 * Chaque commande cisco est précédé par la lettre b et se finit par \n . Le b permet de simuler une commande entrer manuellement dans le CLI cisco, le \n simule la validation de la commande avec la touche entrée.
 * Ne pas oublier de faire un chmod 700 sur chaque scripts pour qu'ils puissent être executer sur le terminal.
-
+* Les scripts sont sauvegardés sur mon repertoire personnel sous Linux home/david/Documents/Python_Scripts. N'oubliez pas de modifier les chemins d'accès pour qu'ils correspondent à l'emplacement de votre propre scripts /!\
 
 
