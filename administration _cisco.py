@@ -26,9 +26,9 @@ while choix != "3":
         while choix_switch != "3": # Execution des scripts 
             choix_switch = input(switch)
             if choix_switch == "1":
-                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/vlan.py"]) 
+                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/vlan.py"]) # Localisation du script
             elif choix_switch == "2":
-                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/port_switch.py"])
+                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/port_switch.py"]) # Localisation du script
             else:
                 print("Retour au menu principal")
             
@@ -42,9 +42,9 @@ while choix != "3":
         choix_router = input(router)
         while choix != "3": # execution des scripts
             if choix_router == "1":
-                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/dhcp_routage_vlan.py"])
+                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/dhcp_routage_vlan.py"]) # Localisation du script
             elif choix_router == "2":
-                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/"])
+                subprocess.call(["/usr/bin/python3", "/home/david/Documents/Python_Scripts/"]) # Localisation du script
             else:
                 print("Retour au menu principal")
             
